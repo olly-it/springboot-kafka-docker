@@ -7,5 +7,5 @@ $ docker compose up -d     #as a daemon
 
 # To publish a message (through rest controller)
 ```sh
-$ curl -X POST -F 'message=test' http://localhost:8080/kafka/publish
+$ curl -X POST -F 'message=test' -F 'topic=D' http://localhost:8080/kafka/publish
 ```	
